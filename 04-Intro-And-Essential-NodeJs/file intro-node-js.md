@@ -7,7 +7,8 @@ b. Perbedaan Node.js dengan Javascript adalah Javascript merupakan bahasa
 pemrogramman sedangkan node.js adalah runtime environment untuk javascript
 ```
 **2. Mohon jelaskan arsitektur dari Node.js?**
-```Berdasarkan bagan arsitektur pada slide pembelajaran,
+```
+Berdasarkan bagan arsitektur pada slide pembelajaran,
 arsitektur pada node.js terdiri dari aplication dimana terdapat
 file file dengan kode kode javascript, kemudian source code tadi
 akan dijalankan di runtimenya javascript yaitu V8 Engine, kemudian akan
@@ -17,7 +18,8 @@ kemudian akan dijalankan, apabila operasi masih lama maka akan diskip
 dan mengambil antrian berikutnya.Apabila telah selesai CALLBACK akan dieksekusi.
 ```
 **3. Ape perbedaan antara Built-in Module, External Module, dan Custom Module pada Node.js?**
-```a. Built-in module merupakan set module bawaan yang dimana dapat digunakan 
+```
+a. Built-in module merupakan set module bawaan yang dimana dapat digunakan 
 tanpa instalasi lebih lanjut dan dapat langsung digunakan
 
 b. Extrenal module merupakan modul dari pihak ketiga yang harus kita instal
@@ -28,7 +30,8 @@ c CUstom module merupakan module yang dapat dicustom atau kita buat sendiri
 dan dapat dimasukkan kedalam aplikasi kita
 ```
 **4. Sebutkan salah satu contoh dari Built-in Module, External Module, dan Custom Module pada Node.js?**
-```a. Bulit-in Module : http, url, path, util
+```
+a. Bulit-in Module : http, url, path, util
 b. External Module : express dan  lodash
 c. Custome Module :
     exports.myDateTime = function () {
