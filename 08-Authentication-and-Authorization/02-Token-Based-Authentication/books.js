@@ -7,7 +7,7 @@ const port = 4000;
 
 const accessTokenSecret = 'eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTYzOTQ3OTQ5MCwiaWF0IjoxNjM5NDc5NDkwfQ.rp9pddQfwajZOMH-rew4S7rwY-IpPUznn5bOP6v4Dak';
 
-// Middleware for veryfying token that client have when login in port 3000 (auth.js)
+// Middleware to verifying token that client have when login in port 3000 (auth.js)
 const authenticateJWT = (req, res, next) => {
     const authHeader = req.headers.authorization;
 
