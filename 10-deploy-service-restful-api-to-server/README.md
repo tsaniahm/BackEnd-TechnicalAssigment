@@ -1,6 +1,8 @@
-**URL HEROKU**
+**TECHNICAL ASSIGMENT DEPLOY SERVICE RESTFULL API TO SERVER**
 
-Pada Technical Assigment kali ini digunakan app backend dari tugas Technical Assignment sebelumnya yaitu terkait 09-RESTful-API-Express-Sequelize
+Pada Technical Assigment kali ini digunakan app backend dari tugas Technical Assignment sebelumnya yaitu terkait 09-RESTful-API-Express-Sequelize, kemudian digunakan https://www.freemysqlhosting.net/ sebagai tempat deploy mysql dan https://www.heroku.com untuk deploy appnya
+
+**URL HEROKU**
 
 https://salty-fjord-88195.herokuapp.com/
 
