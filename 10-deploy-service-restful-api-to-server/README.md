@@ -1,5 +1,7 @@
 **URL HEROKU**
 
+Pada Technical Assigment kali ini digunakan app backend dari tugas Technical Assignment sebelumnya yaitu terkait 09-RESTful-API-Express-Sequelize
+
 https://salty-fjord-88195.herokuapp.com/
 
 **Endpoint to GET ALL DATA HEWAN**
