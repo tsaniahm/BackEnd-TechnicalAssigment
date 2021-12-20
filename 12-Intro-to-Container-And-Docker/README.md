@@ -8,10 +8,8 @@ bisa mengakses resource yang telah ditentukan dalam Docker image.
 2. Jelaskan apa perbedaan antara konsep container dengan virtual machine !
 
 ```
-VM(Viritual Machine) sendiri memakan banyak resource dan waktu booting
-karena virtualisasi dilakukan pada host hardwarenya.
-Sedangkan container berkebalikan dengan VM dimana container melakukan
-viritualisasi pada host operating system (OS) nya.
+VM(Viritual Machine) sendiri memakan banyak resource dan waktu booting karena virtualisasi dilakukan pada host hardwarenya.
+Sedangkan container berkebalikan dengan VM dimana container melakukan viritualisasi pada host operating system (OS) nya.
 ```
 
 | Viritul Machine     | Container |
