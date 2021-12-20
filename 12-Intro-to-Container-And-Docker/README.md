@@ -16,6 +16,10 @@ Sedangkan container berkebalikan dengan VM dimana container melakukan viritualis
 |:----:| :----:|
 | Viritualisasi di host hardware | Viritualisasi di host Operating System (OS)|
 | Memakan banyak waktu dan resource| Lebih cepat dan efisien|
+| Performa terbatas pada konfigurasi VM | Performa maksimum tergantung pada hardware fisik |
+| Terisolasi penuh pada level hardware sehingga lebih aman | Terisolasi pada level proses |
+| Membutuhkan Hypervisor | Tidak Membutuhkan Hypervisor |
+| Dapat Mengakses Kernel | Tidak Dapat Mengakses Kernel |
 
 3. Apa yang dimaksud dengan docker file ?
 ```
