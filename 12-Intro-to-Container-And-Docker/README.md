@@ -8,10 +8,12 @@ Docker Container merupakan Wadah yang digunakan untuk mengemas serta menjalankan
 ```
 VM(Viritual Machine) sendiri memakan banyak resource dan waktu booting karena virtualisasi dilakukan pada host hardwarenya
 Sedangkan container berkebalikan dengan VM dimana container melakukan viritualisasi pada host operating system (OS) nya.
+```
+
 | Viritul Machine     | Container |
 |:----:| :----:|
 | Viritualisasi di host hardware | Viritualisasi di host Operating System (OS)|
-```
+
 3. Apa yang dimaksud dengan docker file ?
 ```
 Docker file adalah blueprint text document yang dimana berisi semua perintah yang dapat dipanggil user pada baris perintah untuk membangun atau membentuk image
