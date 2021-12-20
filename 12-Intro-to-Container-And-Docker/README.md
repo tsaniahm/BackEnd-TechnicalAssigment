@@ -15,6 +15,7 @@ Sedangkan container berkebalikan dengan VM dimana container melakukan viritualis
 | Viritul Machine     | Container |
 |:----:| :----:|
 | Viritualisasi di host hardware | Viritualisasi di host Operating System (OS)|
+| Memakan banyak waktu dan resource| Lebih cepat dan efisien|
 
 3. Apa yang dimaksud dengan docker file ?
 ```
@@ -29,3 +30,10 @@ image dimana docker registery ini merupakan sistem penyimpanan dan
 distribusi untuk docker image dan tersedia di berbagai versi tag
 ```
 5. Jelaskan bagaimana cara untuk menjalankan lebih dari 1 container secara bersamaan dan saling terhubung !
+
+```
+Agar dapat menjalankan multiple container, dapat digunakan docker compose. 
+Docker compose sendiri adalah tool yang menjalankan vbanyak container pada aplikasi-aplikasi docker.
+Dengan compose, digunakan YAML file untuk mengkonfigurasi layanan aplikasi kita,
+yang kemudian dengan single command, kita dapat create dan start semua layanan dari configurasi kita.
+```
