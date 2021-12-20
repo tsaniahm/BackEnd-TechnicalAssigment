@@ -1,13 +1,17 @@
 1. Jelaskan apa yang dimaksud dengan container pada docker !
 
 ```
-Docker Container merupakan Wadah yang digunakan untuk mengemas serta menjalankan aplikasi yang mencakup kode, runtime, system tools, dan pengaturan. Container hanya bisa mengakses resource yang telah ditentukan dalam Docker image.
+Docker Container merupakan Wadah yang digunakan untuk mengemas serta menjalankan
+aplikasi yang mencakup kode, runtime, system tools, dan pengaturan. Container hanya
+bisa mengakses resource yang telah ditentukan dalam Docker image.
 ```
 2. Jelaskan apa perbedaan antara konsep container dengan virtual machine !
 
 ```
-VM(Viritual Machine) sendiri memakan banyak resource dan waktu booting karena virtualisasi dilakukan pada host hardwarenya
-Sedangkan container berkebalikan dengan VM dimana container melakukan viritualisasi pada host operating system (OS) nya.
+VM(Viritual Machine) sendiri memakan banyak resource dan waktu booting
+karena virtualisasi dilakukan pada host hardwarenya.
+Sedangkan container berkebalikan dengan VM dimana container melakukan
+viritualisasi pada host operating system (OS) nya.
 ```
 
 | Viritul Machine     | Container |
@@ -16,10 +20,14 @@ Sedangkan container berkebalikan dengan VM dimana container melakukan viritualis
 
 3. Apa yang dimaksud dengan docker file ?
 ```
-Docker file adalah blueprint text document yang dimana berisi semua perintah yang dapat dipanggil user pada baris perintah untuk membangun atau membentuk image
+Docker file adalah blueprint text document yang dimana berisi semua
+perintah yang dapat dipanggil user pada baris perintah untuk membangun
+atau membentuk image
 ```
 4. Apa yang dimaksud dengan docker registery ?
 ```
-Docker registery pada dasarnya adalah tempat untuk upload atau download image dimana docker registery ini merupakan sistem penyimpanan dan distribusi untuk docker image dan tersedia di berbagai versi tag
+Docker registery pada dasarnya adalah tempat untuk upload atau download
+image dimana docker registery ini merupakan sistem penyimpanan dan
+distribusi untuk docker image dan tersedia di berbagai versi tag
 ```
 5. Jelaskan bagaimana cara untuk menjalankan lebih dari 1 container secara bersamaan dan saling terhubung !
