@@ -36,7 +36,7 @@ exports.getCourses = async (req,res) =>{
     try {   
         const findCourses = await Courses.find()
         res.status(200).json({
-            message : "Get courses successfull",
+            message : "Success Get courses",
             Laporan : findCourses
         })
     } catch (error) {
@@ -50,7 +50,7 @@ exports.getCoursesById = async (req, res) =>{
     
         const findCourses = await Courses.findOne({_id: id})
         res.status(200).json({
-            message : `Get Courses with id ${id} successfull`,
+            message : `Success Get Courses with id ${id}`,
             Laporan : findCourses
         })
     } catch (error) {
@@ -79,7 +79,7 @@ exports.updateCourses = async (req, res) =>{
         )
         const findCourses = await Courses.findOne({_id: id})
         res.status(200).json({
-            message : `Update Instructors with id ${id} successfull`,
+            message : `Success Update Instructors with id ${id}`,
             Laporan : findCourses
         })
     } catch (error) {

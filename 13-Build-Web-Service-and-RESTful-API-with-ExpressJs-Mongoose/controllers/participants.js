@@ -32,7 +32,7 @@ exports.getParticipants = async (req,res) =>{
     try {
         const findParticipants = await Participants.find()
         res.status(200).json({
-            message : "Get Participants successfull",
+            message : "Success Get Participants",
             Laporan : findParticipants
         })
     } catch (error) {
@@ -45,7 +45,7 @@ exports.getParticipantByID = async (req, res) =>{
         const id = req.params.id
         const findParticipant = await Participants.findOne({_id: id})
         res.status(200).json({
-            message : `Get Participant with id ${id} successfull`,
+            message : `Success Get Participant with id ${id}`,
             Laporan : findParticipant
         })
     } catch (error) {
@@ -76,7 +76,7 @@ exports.updateParticipant = async (req, res) =>{
     
         const findParticipants = await Participants.findOne({_id: id})
         res.status(200).json({
-            message : `Update Participant with id ${id} successfull`,
+            message : `Success Update Participant with id ${id}`,
             Laporan : findParticipants
         })
     } catch (error) {

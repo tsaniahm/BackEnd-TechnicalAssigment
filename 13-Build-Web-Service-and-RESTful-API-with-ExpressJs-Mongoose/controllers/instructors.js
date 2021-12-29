@@ -19,7 +19,7 @@ exports.postInstructors = async (req,res, next) =>{
         await newData.save()
     
         res.status(201).json({ 
-            message : "Berhasil Menambahkan Data Instructors",
+            message : "Success add Instructor",
             laporan : newData
         })
     } catch (error) {
@@ -31,7 +31,7 @@ exports.getInstructots = async (req,res, next) =>{
     try {
         const findInstructors = await Instructors.find()
         res.status(200).json({
-            message : "Get Instructors successfull",
+            message : " Success Get Instructors",
             Laporan : findInstructors
         })
     } catch (error) {
@@ -45,7 +45,7 @@ exports.getInstructorsById = async (req, res, next) =>{
 
         const findInstructors = await Instructors.findOne({_id: id})
         res.status(200).json({
-            message : `Get Instructors with id ${id} successfull`,
+            message : `Success Get Instructor with id ${id}`,
             Laporan : findInstructors
         })
     } catch (error) {
@@ -75,7 +75,7 @@ exports.updateInstructors = async (req, res, next) =>{
         const findInstructors = await Instructors.findOne({_id: id})
         
         res.status(200).json({
-            message : `Update Instructors with id ${id} successfull`,
+            message : `Success Update Instructor with id ${id}`,
             Laporan : findInstructors
         })
     } catch (error) {
@@ -90,7 +90,7 @@ exports.deleteInstructors = async (req, res, next) =>{
         await Instructors.deleteOne({_id:id})
     
         res.status(200).json({
-            message : `Instructors with id ${id} removed`
+            message : `Instructor with id ${id} removed`
         })
     } catch (error) {
         res.status(500).json({message : error})
