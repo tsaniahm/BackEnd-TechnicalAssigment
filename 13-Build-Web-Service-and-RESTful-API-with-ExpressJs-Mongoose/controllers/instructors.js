@@ -20,7 +20,7 @@ exports.postInstructors = async (req,res, next) =>{
     
         res.status(201).json({ 
             message : "Success add Instructor",
-            laporan : newData
+            result : newData
         })
     } catch (error) {
         res.status(500).json({message : error})
@@ -32,7 +32,7 @@ exports.getInstructots = async (req,res, next) =>{
         const findInstructors = await Instructors.find()
         res.status(200).json({
             message : " Success Get Instructors",
-            Laporan : findInstructors
+            result : findInstructors
         })
     } catch (error) {
         res.status(500).json({message : error})
@@ -46,7 +46,7 @@ exports.getInstructorsById = async (req, res, next) =>{
         const findInstructors = await Instructors.findOne({_id: id})
         res.status(200).json({
             message : `Success Get Instructor with id ${id}`,
-            Laporan : findInstructors
+            result : findInstructors
         })
     } catch (error) {
         res.status(500).json({message : error})
@@ -76,7 +76,7 @@ exports.updateInstructors = async (req, res, next) =>{
         
         res.status(200).json({
             message : `Success Update Instructor with id ${id}`,
-            Laporan : findInstructors
+            result : findInstructors
         })
     } catch (error) {
         res.status(500).json({message : error})

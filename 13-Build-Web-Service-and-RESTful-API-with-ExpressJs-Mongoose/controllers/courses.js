@@ -24,7 +24,7 @@ exports.postCourses = async(req,res)=>{
         await newData.save()
         res.status(201).json({
             message : "Success add Courses",
-            Laporan : newData
+            result : newData
         })
     } catch (error) {
         res.status(500).json({message: error})
@@ -37,7 +37,7 @@ exports.getCourses = async (req,res) =>{
         const findCourses = await Courses.find()
         res.status(200).json({
             message : "Success Get courses",
-            Laporan : findCourses
+            result : findCourses
         })
     } catch (error) {
         res.status(500).json({message: error})
@@ -51,7 +51,7 @@ exports.getCoursesById = async (req, res) =>{
         const findCourses = await Courses.findOne({_id: id})
         res.status(200).json({
             message : `Success Get Courses with id ${id}`,
-            Laporan : findCourses
+            result : findCourses
         })
     } catch (error) {
         res.status(500).json({message: error})
@@ -80,7 +80,7 @@ exports.updateCourses = async (req, res) =>{
         const findCourses = await Courses.findOne({_id: id})
         res.status(200).json({
             message : `Success Update Instructors with id ${id}`,
-            Laporan : findCourses
+            result : findCourses
         })
     } catch (error) {
         res.status(500).json({message: error})

@@ -21,7 +21,7 @@ exports.postParticipants = async (req, res) =>{
         await newData.save()
         res.status(201).json({ 
             message : "Success add participant",
-            laporan : newData
+            result : newData
         })
     } catch (error) {
         res.status(500).json({message: error})
@@ -33,7 +33,7 @@ exports.getParticipants = async (req,res) =>{
         const findParticipants = await Participants.find()
         res.status(200).json({
             message : "Success Get Participants",
-            Laporan : findParticipants
+            result : findParticipants
         })
     } catch (error) {
         res.status(500).json({message: error})
@@ -46,7 +46,7 @@ exports.getParticipantByID = async (req, res) =>{
         const findParticipant = await Participants.findOne({_id: id})
         res.status(200).json({
             message : `Success Get Participant with id ${id}`,
-            Laporan : findParticipant
+            result : findParticipant
         })
     } catch (error) {
         res.status(500).json({message: error})
@@ -77,7 +77,7 @@ exports.updateParticipant = async (req, res) =>{
         const findParticipants = await Participants.findOne({_id: id})
         res.status(200).json({
             message : `Success Update Participant with id ${id}`,
-            Laporan : findParticipants
+            result : findParticipants
         })
     } catch (error) {
         res.status(500).json({message: error})
