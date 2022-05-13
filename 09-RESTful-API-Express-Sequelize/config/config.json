@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "db_hewan",
-    "host": "127.0.0.1",
+    "username": "sql6459243",
+    "password": "XWAYMvcf7f",
+    "database": "sql6459243",
+    "host": "sql6.freemysqlhosting.net",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "db_hewan_test",
-    "host": "127.0.0.1",
+    "username": "sql6459243",
+    "password":  "XWAYMvcf7f",
+    "database": "sql6459243",
+    "host": "sql6.freemysqlhosting.net",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "db_hewan_production",
-    "host": "127.0.0.1",
+    "username": "sql6459243",
+    "password": "XWAYMvcf7f",
+    "database": "sql6459243",
+    "host": "sql6.freemysqlhosting.net",
     "dialect": "mysql"
   }
 }

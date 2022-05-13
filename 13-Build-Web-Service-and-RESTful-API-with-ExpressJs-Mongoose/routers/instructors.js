@@ -1,6 +1,7 @@
 const express =  require("express")
 const router = express.Router()
 const { body} = require('express-validator');
+const { authenticateJWT } = require("../controllers/authJwt");
 
 const {getInstructots,postInstructors,getInstructorsById, updateInstructors, deleteInstructors} = require("../controllers/instructors")
 
@@ -20,7 +21,7 @@ router.patch(
     updateInstructors
 )
 
-router.get("/instructors", getInstructots)
+router.get("/instructors", authenticateJWT, getInstructots)
 router.get("/instructors/:id", getInstructorsById)
 router.delete("/instructors/:id", deleteInstructors)
 
